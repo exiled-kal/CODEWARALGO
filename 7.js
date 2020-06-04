@@ -9,42 +9,53 @@
 // 3.  loop through the store array and square each one then add them all up.
 // 4. check the square root of it and if it has a whole number it counts as one.
 // 5. push the number and the sum of the squared divisor in the sqrArr;
+// function listSquared(m, n) {
+//     var increment = m;
+//     var sqrDivisors = [];
+//     var result = 0;
+//     var SqrArr = [];
+//     while(increment <= n) {
+//         for (var i = 0; i <= increment; i++) {            
+//             if (increment % i === 0) {
+//                 sqrDivisors.push(i * i);
+//             }
+//         }
+
+//         if (sqrDivisors !== 0) {
+//           sqrDivisors.forEach(function (current) {
+//             result += current;
+//           });
+
+//           storeDivisors = [];
+//         }
+
+//         if (Number.isInteger(Math.sqrt(result))) {
+//             console.log(result, increment)
+//             SqrArr.push([increment, result]);
+//         }
+
+//         result = 0;
+//         increment++;
+//     }
+
+    
+    
+//     return SqrArr;
+    
+
+// }
+
 function listSquared(m, n) {
-    var increment = m;
-    var sqrDivisors = [];
-    var result = 0;
-    var SqrArr = [];
-    while(increment <= n) {
-        for (var i = 0; i <= increment; i++) {            
-            if (increment % i === 0) {
-                sqrDivisors.push(i * i);
-            }
-        }
-
-        if (sqrDivisors !== 0) {
-          sqrDivisors.forEach(function (current) {
-            result += current;
-          });
-
-          storeDivisors = [];
-        }
-
-        if (Number.isInteger(Math.sqrt(result))) {
-            console.log(result, increment)
-            SqrArr.push([increment, result]);
-        }
-
-        result = 0;
-        increment++;
+  var arr = [];
+  for (var i = m; i <= n; i++) {
+    var temp = 0;
+    for (var j = 1; j <= i; j++) {
+      if (i % j == 0) temp += j * j;
     }
-
-    
-    
-    return SqrArr;
-    
-
+    if (Math.sqrt(temp) % 1 == 0) arr.push([i, temp]);
+  }
+  return arr;
 }
-
 
 
 console.log(listSquared(1, 250), [
