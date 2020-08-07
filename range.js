@@ -1,33 +1,23 @@
 function solution(list) {
-  for (var i = 0; i < list.length; i++) {
-    var j = i;
-    while (list[j] - list[j + 1] == -1) j++;
-    if (j != i && j - i > 1) list.splice(i, j - i + 1, list[i] + '-' + list[j]);
+  var str = [];
+  for (i = 0; i < list.length; i++) {
+    if (list[i] + 1 !== list[i + 1]) {
+      str += list[i].toString() + ',';
+    } else if (
+      list[i] + 1 === list[i + 1] &&
+      list[i + 1] + 1 === list[i + 2] &&
+      list[i - 1] + 1 !== list[i]
+    ) {
+      str += list[i].toString() + '-';
+    } else if (str[str.length - 1] === '-' && list[i] + 1 !== list[i + 1]) {
+      str += list[i].toString() + ',';
+    } else if (list[i] - 1 === list[i - 1] && list[i] + 1 === list[i + 1]) {
+    } else if (list[i] - 1 === list[i - 1] && list[i - 1] - 1 === list[i - 2]) {
+      str += list[i].toString() + ',';
+    } else {
+      str += list[i].toString() + ',';
+    }
   }
-  return list.join();
+  return str.slice(0, -1);
 }
 
-console.log(
-  solution([
-    -6,
-    -3,
-    -2,
-    -1,
-    0,
-    1,
-    3,
-    4,
-    5,
-    7,
-    8,
-    9,
-    10,
-    11,
-    14,
-    15,
-    17,
-    18,
-    19,
-    20,
-  ])
-);
