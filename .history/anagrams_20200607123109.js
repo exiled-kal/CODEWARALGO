@@ -23,4 +23,4 @@ function check(freq, k) {
   }
   
 
-}
+
