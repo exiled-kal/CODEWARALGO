@@ -1,20 +1,7 @@
 function createPhoneNumber(numbers) {
-  let newNumber = [];
+  let newNumber = []
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (i == 0) {
-      newNumber.push('(' + numbers[i]);
-    } else if (i == 2) {
-      newNumber.push(numbers[i] + ')');
-    } else if (i == 3) {
-      newNumber.push(' ' + numbers[i]);
-    } else if (i == 5) {
-      newNumber.push(numbers[i] + '-');
-    } else {
-      newNumber.push(numbers[i]);
-    }
-  }
-  return newNumber.join('');
+  for( let i = 0; i < numbers.length; i++) 
   // return (
   //   '(' +
   //   numbers[0] +
