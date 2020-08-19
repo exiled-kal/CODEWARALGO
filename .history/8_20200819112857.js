@@ -14,4 +14,4 @@ function expandedForm(num) {
 
 console.log(expandedForm(12));
 console.log(expandedForm(42));
-console.log(expandedForm(70304));
+console.log(expandedForm(70304), '70000 + 300 + 4');

@@ -30,13 +30,14 @@ function alphabetPosition(text) {
   for (i = 0; i < text.length; i++) {
     if (alphabet[i] == text.charAt[i]) break;
   }
-  if (alphabet[i] !== text.charAt[i]) {
+  if (alphabet[i] !== text.chatAt[i]) {
+    
   }
   return text;
+
 }
 console.log(
-  alphabetPosition("The sunset sets at twelve o' clock."),
-  '20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11'
+  alphabetPosition("The sunset sets at twelve o' clock.")
 );
 console.log(
   alphabetPosition('The narwhal bacons at midnight.'),

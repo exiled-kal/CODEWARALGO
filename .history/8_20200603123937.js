@@ -12,6 +12,6 @@ function expandedForm(num) {
   return equation.join(' + ');
 }
 
-console.log(expandedForm(12));
-console.log(expandedForm(42));
-console.log(expandedForm(70304));
+console.log(expandedForm(12), '10 + 2');
+console.log(expandedForm(42), '40 + 2');
+console.log(expandedForm(70304), '70000 + 300 + 4');

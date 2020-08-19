@@ -8,6 +8,7 @@ function sumOfDivided(lst) {
   return sum;
 }
 
+
 console.log(sumOfDivided([12, 15]), [
   [2, 12],
   [3, 27],
@@ -19,3 +20,5 @@ console.log(sumOfDivided([15, 21, 24, 30, 45]), [
   [5, 90],
   [7, 21],
 ]);
+
+

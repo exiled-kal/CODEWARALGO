@@ -1,3 +1,6 @@
+
+
+
 // need some sort of loop through the number starting from m all the way through n
 // check if the current number has any divisors.. square the numbers and add them all
 // check the square root of number and if it isn't a decimal/float it one! Math.sqrt()
@@ -12,7 +15,7 @@
 //     var result = 0;
 //     var SqrArr = [];
 //     while(increment <= n) {
-//         for (var i = 0; i <= increment; i++) {
+//         for (var i = 0; i <= increment; i++) {            
 //             if (increment % i === 0) {
 //                 sqrDivisors.push(i * i);
 //             }
@@ -35,7 +38,10 @@
 //         increment++;
 //     }
 
+    
+    
 //     return SqrArr;
+    
 
 // }
 
@@ -51,6 +57,14 @@ function listSquared(m, n) {
   return arr;
 }
 
-console.log(listSquared(1, 250));
-console.log(listSquared(42, 250));
-console.log(listSquared(250, 500));
+
+console.log(listSquared(1, 250), [
+  [1, 1],
+  [42, 2500],
+  [246, 84100],
+]);
+console.log(listSquared(42, 250), [
+  [42, 2500],
+  [246, 84100],
+]);
+console.log(listSquared(250, 500), [[287, 84100]])

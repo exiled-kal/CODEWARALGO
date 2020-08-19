@@ -5,7 +5,7 @@ function pigIt(str) {
         str[str.length-i-1] = str[i];
         str[i] = result + ' ' + 'ay';
     }
-    return (" ");
+    return str[i(" ");
 }
 
 

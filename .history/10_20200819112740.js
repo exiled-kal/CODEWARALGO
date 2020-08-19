@@ -10,4 +10,4 @@ function pigIt(str) {
 
 
 console.log(pigIt('Pig latin is cool'));
-console.log(pigIt('This is my string'));
+console.log(pigIt('This is my string'), 'hisTay siay ymay tringsay');

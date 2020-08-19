@@ -30,9 +30,11 @@ function alphabetPosition(text) {
   for (i = 0; i < text.length; i++) {
     if (alphabet[i] == text.charAt[i]) break;
   }
-  if (alphabet[i] !== text.charAt[i]) {
+  if (alphabet[i] !== text.chatAt[i]) {
+    
   }
   return text;
+
 }
 console.log(
   alphabetPosition("The sunset sets at twelve o' clock."),
