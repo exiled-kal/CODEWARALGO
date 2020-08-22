@@ -10,7 +10,7 @@ def format_duration(seconds):
     if not seconds:
         return "now"
 
-    newformat = []
+    chunks = []
     for name, secs in times:
         qty = seconds // secs
         if qty:
@@ -20,4 +20,4 @@ def format_duration(seconds):
 
         seconds = seconds % secs
 
-    return ', '.join(newformat[:-1]) + ' and ' + newformat[-1] if len(newformat) > 1 else newformat[0]
+    return ', '.join(newformat[:-1]) + ' and ' + newformat[-1] if len(newformat) > 1 else chunks[0]
