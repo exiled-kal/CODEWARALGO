@@ -1,0 +1,1 @@
+function formatDuration(seconds)
