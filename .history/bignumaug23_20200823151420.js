@@ -34,10 +34,8 @@ function narcissistic(value) {
     let digit = Number(val[i]);
     num = num + Math.pow(digit, exponent);
   }
-  if (num == value) {
-    return true;
-  } else {
-    return false;
+  if( num == value) {
+    return trye
   }
 }
 console.log(narcissistic(153));

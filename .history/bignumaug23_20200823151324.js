@@ -31,13 +31,7 @@ function narcissistic(value) {
   let val = value.toString();
 
   for (let i = 0; i < exponent; i++) {
-    let digit = Number(val[i]);
-    num = num + Math.pow(digit, exponent);
-  }
-  if (num == value) {
-    return true;
-  } else {
-    return false;
+    let digit = Number();
   }
 }
 console.log(narcissistic(153));
