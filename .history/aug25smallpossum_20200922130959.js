@@ -127,4 +127,4 @@ numbers = [
   69504500,
   22628645,
 ];
-console.log(solution(numbers));
+console.log(solution(numbers);

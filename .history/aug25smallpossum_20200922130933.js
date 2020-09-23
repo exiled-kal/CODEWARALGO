@@ -41,7 +41,7 @@ function solution(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
 
-numbers = [
+clgnumbers = [
   459280445,
   309958805,
   167618880,
@@ -127,4 +127,4 @@ numbers = [
   69504500,
   22628645,
 ];
-console.log(solution(numbers));
+solution(numbers);
