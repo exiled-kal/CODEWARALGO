@@ -38,4 +38,4 @@ function containsCloseNums(nums, k) {
   return false;
 }
 
-console.log(containsCloseNums([1,2,3,4,2], 2));
+console.log(containsCloseNums([1.,2,3,4,2], 2));
