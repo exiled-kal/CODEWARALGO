@@ -13,7 +13,7 @@ function firstNotRepeatingCharacter(s) {
 console.log(firstNotRepeatingCharacter('abacabadcd'));
 console.log('----------------******--------------');
 console.log(
-  firstNotRepeatingCharacter('abcdefghijklmnopqrstuvwxyziflskeznslkjfabe')
+  firstNotRepeatingCharacter('abcdefghijklmnopqrstuvwxyziflskecznslkjfabe')
 );
 
 // def firstNotRepeatingCharacter(s):

@@ -10,10 +10,10 @@ function firstNotRepeatingCharacter(s) {
   return '_';
 }
 
-console.log(firstNotRepeatingCharacter('abacabadcd'));
+console.log(firstNotRepeatingCharacter('abacabadc'));
 console.log('----------------******--------------');
 console.log(
-  firstNotRepeatingCharacter('abcdefghijklmnopqrstuvwxyziflskeznslkjfabe')
+  firstNotRepeatingCharacter('abcdefghijklmnopqrstuvwxyziflskecznslkjfabe')
 );
 
 // def firstNotRepeatingCharacter(s):
